@@ -166,7 +166,7 @@ services:
     ports:
         - "8888:8888"
     volumes:
-        - ./nbs:/home
+        # - ./nbs:/home
         - ./events:/tmp/spark-events
     command: start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token=''
 
